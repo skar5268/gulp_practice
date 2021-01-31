@@ -1,0 +1,118 @@
+.d-flex {
+  display: flex;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFD366;
+  padding: 60px 0;
+  width: 700px;
+}
+.wrap label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.wrap .inputClass {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  padding: 5px 7px;
+  margin-bottom: 20px;
+  border: 2px solid #FFD366;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #FFD366;
+}
+.wrap .inputClass:focus {
+  outline: none;
+  padding: 3px 5px;
+  border: 4px solid #FFD366;
+}
+.wrap .calBtn {
+  border: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #FFD366;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #424242;
+}
+.wrap .calBtn:hover {
+  box-shadow: 0px 0px 30px 6px rgba(255, 196, 50, 0.64);
+  transition: 0.5s;
+}
+.wrap .calBtn:active {
+  background-color: #DEA921;
+}
+.wrap .calBtn:focus {
+  outline: none;
+}
+
+header {
+  background-color: #424242;
+}
+
+h1 a {
+  background-image: url(../../images/BMICLogo.png);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: cover;
+  padding: 0;
+  width: 117px;
+  height: 117px;
+}
+
+footer {
+  background-color: #FFD366;
+  position: fixed;
+  bottom: 0;
+  min-width: 100vw;
+  text-align: center;
+}
+footer img {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  padding: 18px;
+  filter: contrast(10%);
+}
+
+.recordList li {
+  width: 624px;
+  background-color: #fff;
+  color: #4A4A4A;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-left: 5px solid #000;
+}
+.recordList li span {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}

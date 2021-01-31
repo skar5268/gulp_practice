@@ -2,32 +2,69 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="assets/style/css/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
 
-  
-<h1>
-  這是首頁的標題
-</h1>
-<p>這是文字內容2222</p>
+    <header>
+        <div class="wrap d-flex">
+            <h1><a href="index.html">BMI Calculator</a></h1>
+            <ul>
+                <li>
+                    <label for="inputHeight">身高 cm</label>
+                    <input type="text" placeholder="請輸入身高" class="inputClass" id="inputHeight">
+                </li>
+                <li>
+                    <label for="inputWeight">體重 kg</label>
+                    <input type="text" placeholder="請輸入體重" class="inputClass mb-0" id="inputWeight">
+
+                </li>
+            </ul>
+            <div class="position-relative">
+                <a href="#" class="calBtn" id="calBtnId">看結果</a>
+                <div class="result d-flex align-item-center">
+                    <div class="position-relative">
+                        <div class="d-none resultImg"></div>
+                        <a href="#" class="d-none resetBtn" id="resetBtnId">
+                            <img src="assets/images/icons_loop.png" alt="重新計算">
+                        </a>
+                    </div>
+                    <div class="rank"></div>
+                </div>
 
 
-<div class="box"></div>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+            </div>
+
+
+        </div>
+    </header>
+    <section class="record">
+        <div class="wrap">
+            <h2 class="recordTitle">BMI 紀錄<br><a href="#" class="delListBtn">清除所有資料</a></h2>
+            <ul class="recordList">
+                <!--<li>理想
+                    <div><span>BMI</span>20.90</div>
+                    <div><span>weight</span>70kg</div>
+                    <div><span>height</span>180cm</div>
+                    <span>09-19-2017</span>
+                </li>-->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <a href="index.html">
+            <img src="assets/images/BMICLogo.png" alt="BMI Calculator">
+        </a>
+    </footer>
+
+
+    <script src="assets/js/all.js"></script>
 </body>
 
 </html>
